@@ -10,16 +10,16 @@ nox.options.sessions = ["black", "ruff"]
 @nox.session
 def black(session):
     session.install("black")
-    session.run("black", "./src/{{module_name}}")
+    session.run("black", "./src/{{package_name}}")
 
 
 @nox.session
 def ruff(session):
     session.install("ruff")
-    session.run("ruff", "check", "./src/{{module_name}}", "./tests/", "pyproject.toml")
+    session.run("ruff", "check", "./src/{{package_name}}", "./tests/", "pyproject.toml")
 
 
 @nox.session
 def test(session):
     # Not certain this is a good approach. But it currently works.
-    session.run("pytest", "--cov=./src/{{module_name}}", "tests/")
+    session.run("pytest", "--cov=./src/{{package_name}}", "tests/")

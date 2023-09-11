@@ -5,8 +5,9 @@ _skip_if_exists:
 - CHANGELOG.md
 - CREDITS.md
 # _min_copier_version: "8.0.0"
-#_tasks:
+_tasks:
 # - python scripts/post_generation.py
+- sudo chmod -R a+xwr ./
 _migrations:
 - version: 0.1.0
   before:
@@ -26,7 +27,7 @@ project_name:
 project_description:
   type: str
   help: Your project description
-  default: tbd        
+  default: tbd
 
 package_name:
     type: str

@@ -4,7 +4,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
-Thanks for checking out the Best-README-Template 
+Thanks for checking out the Best-README-Template
 *** If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
@@ -147,9 +147,9 @@ Have [Docker Desktop][DockerDesktop-url] installed.
    ```
 2. Invoke the following commands to create the Docker container:
     ```sh
-    docker build --no-cache -t mimodast -f dockerfile . 
+    docker build --no-cache -t mimodast -f dockerfile .
     ```
-    ```docker 
+    ```docker
     docker create -p5005:5000 -p8093:8088 -p8085:8080 -p8094:8089 -p8095:8090 -p8096:8091 --name mimodast mimodast
     ```
 -->
@@ -392,7 +392,7 @@ The following differences are noteworthy:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - sso_eic
-            - gasdaystart 
+            - gasdaystart
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -493,7 +493,7 @@ Project Link: [https://github.com/EJOOSTEROP/mimodast](https://github.com/EJOOST
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
 
 [Airflow-url]: https://airflow.apache.org
 [AirflowBestPractices-url]: https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html#top-level-python-code

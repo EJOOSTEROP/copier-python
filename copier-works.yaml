@@ -15,7 +15,7 @@ project_name:
 project_description:
   type: str
   help: Your project description
-  default: tbd        
+  default: tbd
 
 package_name:
     type: str
@@ -33,7 +33,7 @@ module_name:
     validator: >-
         {% if not (package_name | regex_search('^[a-z][a-z0-9\_]+$')) %}
         Must use a lowercase letter followed by one or more of (a-z, 0-9, _).
-        {% endif %}        
+        {% endif %}
 
 author_name:
     type: str

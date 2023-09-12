@@ -72,7 +72,7 @@ repository_url:
 customized:
     type: bool
     help: Do you want to provide further project customizations?
-    default: customized
+    default: simple
     choices:
         customized: true
         simple: false

@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.5.5] 2023-09-12
+
 ### Added
 - Expand changelog.md template
 - Add package version as a copier variable (default to 0.0.1)
 - Add message to set python interpreter path for VS Code after copy is performed.
+- Initiate Git with main branch when creating devcontainer
+- Git user and email are set to that of the code author
 
 ### Fixed
 - devcontainer post create commands

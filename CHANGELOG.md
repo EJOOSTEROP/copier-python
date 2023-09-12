@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+### Removed
+- Unused copier.yaml versions
+
 ## [v0.5.5] 2023-09-12
 
 ### Added

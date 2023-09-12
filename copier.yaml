@@ -73,8 +73,7 @@ repository_url:
     help: What is the URL of code repository?
     default: "https://github.com/{{repository_namesepace}}/{{package_name}}"
 
-
-customized:
+customized_install:
     type: bool
     help: Do you want to provide further project customizations?
     default: simple
@@ -89,7 +88,7 @@ include_docker:
     choices:
         yes: true
         no: false
-    when: "{{ customized }}"
+    when: "{{customized_install}}"
 
 setup_mypy:
     type: bool
@@ -98,7 +97,7 @@ setup_mypy:
     choices:
         yes: true
         no: false
-    when: "{{ customized }}"
+    when: "{{customized_install}}"
 
 annotations_ignore_fully_untyped:
     type: bool
@@ -107,10 +106,10 @@ annotations_ignore_fully_untyped:
     choices:
         yes: true
         no: false
-    when: "{{ customized }}"
+    when: "{{customized_install}}"
 
 package_version:
     type: str
     help: Starting version of package
     default: 0.0.1
-    when: "{{ customized }}"
+    when: "{{customized_install}}"

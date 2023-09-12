@@ -2,7 +2,7 @@
 select = ANN,B,B9,BLK,D,DAR,E,F,I,S,W
 ignore=E203,E501,W503
 
-exclude = 
+exclude =
     .git
     ,.nox
     ,build

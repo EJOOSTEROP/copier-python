@@ -52,6 +52,11 @@ author_email:
     help: Code author's preferred email address?
     default: erik.oosterop.khesw@aleeas.com
 
+author_linkedin_url:
+    type: str
+    help: URL of author's LinkedIn page?
+    default: https://linkedin.com/in/erik-oosterop-9505a21
+
 repository_url:
     type: str
     help: URL of code repository?

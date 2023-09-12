@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Expand changelog.md template
 - Add package version as a copier variable (default to 0.0.1)
 
+###
+- devcontainer post create commands
+
 ## [v0.5.0] 2023-09-12
 
 ### Added

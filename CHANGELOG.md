@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Expand changelog.md template
 - Add package version as a copier variable (default to 0.0.1)
+- Add message to set python interpreter path for VS Code after copy is performed.
 
 ###
 - devcontainer post create commands

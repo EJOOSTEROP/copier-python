@@ -7,7 +7,9 @@ Entry point for {{package_name}} package command line interface.
 
 def main():
     """_summary_"""
-    print("Hello world from {{package_name}}.")
+    print("Hello world from {{package_name}}.") # noqa T201
+
+    return -1
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ _skip_if_exists:
 #_tasks:
 # - python scripts/post_generation.py
 _migrations:
-- version: 0.1.0
+- version: 0.5.0
   before:
   - rm --force docs/changelog.md
 

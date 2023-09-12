@@ -39,11 +39,11 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && git config --global user.email 'erik.oosterop@ternanalytics.com' && git config --global user.name 'Erik Oosterop'",
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && git config --global user.email '{{author_email}}' && git config --global user.name '{{author_name}}'",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": "sudo chmod -R a+xwr ./ && poetry install && git config --global --add safe.directory ${containerWorkspaceFolder} && pre-commit install" ,
+	"postCreateCommand": "sudo chmod -R a+xwr ./ && git init && git config --global --add safe.directory ${containerWorkspaceFolder} && poetry install && pre-commit install" ,
 	// "postCreateCommand": "poetry install" ,
 
 	// Configure tool-specific properties.

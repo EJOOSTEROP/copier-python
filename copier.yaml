@@ -31,11 +31,16 @@ project_description:
 package_name:
     type: str
     help: What is your python package name?
-    default: {{project_name}}
+    default: {{project_name|lower|replace('-', '_')|replace(' ', '_') }}
     validator: >-
         {% if not (package_name | regex_search('^[a-z][a-z0-9\_]+$')) %}
         Must use a lowercase letter followed by one or more of (a-z, 0-9, _).
         {% endif %}
+
+#python_package_import_name:
+#  type: str
+#  help: Your Python package import name (for `import NAME` in Python code)
+#  default: "{{package_name|lower|replace('-', '_')|replace(' ', '_') }}"
 
 author_name:
     type: str

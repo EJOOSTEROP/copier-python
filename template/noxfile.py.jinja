@@ -20,6 +20,12 @@ def ruff(session):
 
 
 @nox.session
+def toml_sort(session):
+    session.install("toml-sort")
+    session.run("toml-sort", "--in-place", "pyproject.toml")
+
+
+@nox.session
 def test(session):
     # Not certain this is a good approach. But it currently works.
     session.run("pytest", "--cov=./src/{{package_name}}", "tests/")

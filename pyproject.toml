@@ -1,3 +1,7 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "copier-python-template"
 version = "0.0.1"
@@ -11,10 +15,6 @@ repository = "https://github.com/EJOOSTEROP/copier-python"
 documentation = ""
 keywords = ["copier", "python", "template"]
 
-
-[tool.poetry.scripts]
-# quke = "quke.quke:quke"
-
 [tool.poetry.dependencies]
 python = "^3.11"
 
@@ -24,14 +24,15 @@ python = "^3.11"
 # requests-mock = "^1.11.0"
 toml-sort = "^0.23.1"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.scripts]
 
 [tool.pytest.ini_options]
 markers = [
-    "expensive: uses API key and likely paid or at least limited resources (deselect with '-m \"not expensive\"')",
-    "serial",
+  "expensive: uses API key and likely paid or at least limited resources (deselect with '-m \"not expensive\"')",
+  "serial"
 ]
 
-
+[tool.tomlsort]
+all = true
+in_place = true
+trailing_comma_inline_array = true

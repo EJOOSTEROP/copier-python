@@ -98,9 +98,14 @@ setup_mypy:
 annotations_ignore_fully_untyped:
     type: bool
     help: Checking for type annotations is on. If 'yes', only partial annotations will be highlighted (So functions without type annotation are OK).
-    default: yes
     default: "{% if setup_mypy %}no{% else %}yes{% endif %}"
     choices:
         yes: true
         no: false
+    when: "{{ customized }}"
+
+package_version:
+    type: str
+    help: Starting version of package
+    default: 0.0.1
     when: "{{ customized }}"

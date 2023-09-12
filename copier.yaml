@@ -4,6 +4,7 @@ _templates_suffix: .jinja
 _skip_if_exists:
 - CHANGELOG.md
 - CREDITS.md
+- readme.md
 # _min_copier_version: "8.0.0"
 #_tasks:
 # - python scripts/post_generation.py
@@ -26,7 +27,7 @@ project_name:
 project_description:
   type: str
   help: Your project description
-  default: tbd
+  default: project description tbd
 
 package_name:
     type: str
@@ -37,27 +38,59 @@ package_name:
         Must use a lowercase letter followed by one or more of (a-z, 0-9, _).
         {% endif %}
 
-#python_package_import_name:
-#  type: str
-#  help: Your Python package import name (for `import NAME` in Python code)
-#  default: "{{package_name|lower|replace('-', '_')|replace(' ', '_') }}"
-
 author_name:
     type: str
-    help: What is the name of the code author? (Can be a person or organization)
+    help: What is the name of the code author?
     default: Erik Oosterop
 
 author_email:
     type: str
-    help: Code author's preferred email address?
+    help: What is the code author's preferred email address?
     default: erik.oosterop.khesw@aleeas.com
 
 author_linkedin_url:
     type: str
-    help: URL of author's LinkedIn page?
+    help: What is the URL of the code author's LinkedIn page?
     default: https://linkedin.com/in/erik-oosterop-9505a21
+
+repository_namesepace:
+    type: str
+    help: From github, the 'pandas-dev' in the URL https://github.com/pandas-dev/pandas
+    default: EJOOSTEROP
+
+repository_package:
+    type: str
+    help: From github, the 'pandas' in the URL https://github.com/pandas-dev/pandas
+    default: {{package_name}}
 
 repository_url:
     type: str
-    help: URL of code repository?
-    default: https://github.com/EJOOSTEROP/{{package_name}}
+    help: What is the URL of code repository?
+    default: https://github.com/{{repository_namesepace}}/{{package_name}}
+
+
+customized:
+    type: bool
+    help: Do you want to provide further project customizations?
+    default: customized
+    choices:
+        customized: true
+        simple: false
+
+include_docker:
+    type: bool
+    help: Whether to include file(s) related to building a Docker image.
+    default: no
+    choices:
+        yes: true
+        no: false
+    when: "{{ customized }}"
+
+annotations_ignore_fully_untyped:
+    type: bool
+    help: Whether to check code for missing type annotations. Of 'yes', only partial annotations will be highlighted.
+    default: yes
+    choices:
+        yes: true
+        no: false
+    when: "{{ customized }}"

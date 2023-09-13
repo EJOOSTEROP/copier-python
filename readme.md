@@ -25,10 +25,13 @@ docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker
 - Optional .dockerignore.
 - Setup to use Github as a repository. Does not account for alternative.
 
+## Development note
+Somehow copier takes the template from the latest released version on GitHub instead of the local version.
+
 ## Roadmap
-- [ ] Create useable readme.md shell.
+- [x] Create useable readme.md shell.
 - [ ] Github actions. Some examples https://github.com/pappasam/toml-sort/tree/main/.github/workflows
-    - [ ] Condsider Github templates for issues, feature requests.
+    - [x] Condsider Github templates for issues, feature requests.
 - [ ] Setup documentation. Example https://github.com/pappasam/toml-sort/blob/main/readthedocs.yaml.
 
 [black-url]: https://black.readthedocs.io/en/stable/

@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - CONTRIBUTING.md file (Also based on Hydra, but significantly simplified)
 
 ### Changed
-- Updated README.md scaffold.
+- README.md scaffold.
 - File name captalizations (LICENSE.txt, README.md)
 
 ### Removed

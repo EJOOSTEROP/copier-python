@@ -23,6 +23,7 @@ docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker
 - MIT license, readme.md, empty changelog.md.
 - Pytest, MyPy, [toml-sort][toml-sort-url] installed.
 - Optional .dockerignore.
+- Setup to use Github as a repository. Does not account for alternative.
 
 ## Roadmap
 - [ ] Create useable readme.md shell.

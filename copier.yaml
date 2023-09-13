@@ -113,3 +113,9 @@ package_version:
     help: Starting version of package
     default: 0.0.1
     when: "{{customized_install}}"
+
+repository_branch:
+    type: str
+    help: The branch to initiate the repository. GitHub uses main at the moment.
+    default: main
+    when: "{{customized_install}}"

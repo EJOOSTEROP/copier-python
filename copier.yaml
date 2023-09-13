@@ -14,7 +14,9 @@ _migrations:
   - rm --force docs/changelog.md
 
 _message_after_copy: |
-    Set the Python interpreter in VS Code. This is also needed to be able discover the test in VS Code.
+    Project template successfully created.
+
+    Remember to set the Python interpreter in VS Code (to debug and discover/run tets).
 
     Use 'poetry run which python' to find the correct interpreter path.
 

@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Question for PyPi URL in copier.yaml
 - Update cli.py, test_001.py formatting so it better passes linting on first commit.
 - GitHub bug report template now refers to package name (as opposed to Hydra)
-- README.md updates: logo URL, project image URL
+- README.md updates: logo URL, project image URL, shields URL and smaller size.
 
 ### Removed
 - Removed boilerplate code in __init__.py so it passes linting. Not certain the code was desired in the first place.

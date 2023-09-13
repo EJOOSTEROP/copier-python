@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+### Removed
+- README-reference.md from the generated scaffolding.
+
 ## [v0.7.0] 2023-09-13
 
 ### Changed

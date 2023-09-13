@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+### Changed
+- in devcontainer, load Pylance VS Code extension later as the required Pyhton extension does not always load quickly enough.
+
 ### Removed
 - README-reference.md from the generated scaffolding.
 

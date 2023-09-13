@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.6.1] 2023-09-13
+
+### Added
+- .gitignore for line endings. See [github](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
+
 ## [v0.6.0] 2023-09-12
 
 ### Added

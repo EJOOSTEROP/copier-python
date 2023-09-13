@@ -127,3 +127,15 @@ pypi_url:
     help: tbd
     default: "https://pypi.org/project/{{package_name}}/"
     when: "{{customized_install}}"
+
+repository_branch:
+    type: str
+    help: The branch to initiate the repository. GitHub uses main at the moment.
+    default: main
+    when: "{{customized_install}}"
+
+pypi_url:
+    type: str
+    help: tbd
+    default: "https://pypi.org/project/{{package_name}}/"
+    when: "{{customized_install}}"

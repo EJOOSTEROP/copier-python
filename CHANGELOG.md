@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - in devcontainer, load Pylance VS Code extension later as the required Pyhton extension does not always load quickly enough.
+- alt text for project intro image
+- Added empty line after 2nd <div> in About the Project. This is required to show links correctly.
 
 ### Removed
 - README-reference.md from the generated scaffolding.

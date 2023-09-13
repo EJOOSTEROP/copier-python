@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Shield repository file
 - Copier will ask branch name for git init (defaults to main)
 - GitHub template for bug report, feature request and pull request (using Facebook Reasearch' Hydra project's templates)
+- CONTRIBUTING.md file (Also based on Hydra, but significantly simplified)
 
 ### Changed
 - Updated README.md scaffold.

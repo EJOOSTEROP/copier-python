@@ -4,7 +4,7 @@ _templates_suffix: .jinja
 _skip_if_exists:
 - CHANGELOG.md
 - CREDITS.md
-- readme.md
+- README.md
 # _min_copier_version: "8.0.0"
 #_tasks:
 # - python scripts/post_generation.py

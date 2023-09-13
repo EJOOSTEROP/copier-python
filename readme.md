@@ -4,9 +4,11 @@
 
 Suggestions are welcome. Template is maintained primarily for personal use.
 
-Setup using a Docker image with Copier:
+Setup can be done with a standard `copier copy https://github.com/EJOOSTEROP/copier-python.git .` command.
+
+Alternatively use a Docker image with Copier if Copier is not installed on your system (this creates a `workflow` folder locally):
 ```sh
-docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker-copier copier copy https://github.com/EJOOSTEROP/copier-python.git /usr/src/copier
+docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker-copier copier copy gh:EJOOSTEROP/copier-python.git /usr/src/copier
 ```
 
 ## Summary

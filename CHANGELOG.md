@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+### Added
+- Shield repository
+
+### Changed
+- File name captalizations (LICENSE.txt, README.md)
+
 ### Removed
 - Unused copier.yaml versions
 

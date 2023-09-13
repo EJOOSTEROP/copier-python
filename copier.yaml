@@ -124,6 +124,6 @@ repository_branch:
 
 pypi_url:
     type: str
-    help: tbd
+    help: URL of the repository on PyPi.
     default: "https://pypi.org/project/{{package_name}}/"
     when: "{{customized_install}}"

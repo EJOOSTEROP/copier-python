@@ -8,10 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ### Added
-- Shield repository
+- Shield repository file
 - Copier will ask branch name for git init (defaults to main)
+- GitHub template for bug report, feature request and pull request (using Facebook Reasearch' Hydra project's templates)
 
 ### Changed
+- Updated README.md scaffold.
 - File name captalizations (LICENSE.txt, README.md)
 
 ### Removed

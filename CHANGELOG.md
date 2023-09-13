@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.7.0] 2023-09-13
+
 ### Changed
 - Question for PyPi URL in copier.yaml
 - Update cli.py, test_001.py formatting so it better passes linting on first commit.

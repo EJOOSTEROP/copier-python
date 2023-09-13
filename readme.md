@@ -30,8 +30,10 @@ Somehow copier takes the template from the latest released version on GitHub ins
 
 ## Roadmap
 - [x] Create useable readme.md shell.
-- [ ] Github actions. Some examples https://github.com/pappasam/toml-sort/tree/main/.github/workflows
-    - [x] Condsider Github templates for issues, feature requests.
+- [ ] Github actions. Some examples:
+    - https://github.com/pappasam/toml-sort/tree/main/.github/workflows
+    - https://github/workflows/publish-to-test-pypi.yml
+- [x] Github templates for issues, feature requests.
 - [ ] Setup documentation. Example https://github.com/pappasam/toml-sort/blob/main/readthedocs.yaml.
 
 [black-url]: https://black.readthedocs.io/en/stable/

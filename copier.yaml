@@ -78,7 +78,7 @@ repository_url:
 customized_install:
     type: bool
     help: Do you want to provide further project customizations?
-    default: simple
+    default: false
     choices:
         customized: true
         simple: false

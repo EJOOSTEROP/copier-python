@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.7.1] 2023-09-21
+
 ### Changed
 - in devcontainer, load Pylance VS Code extension later as the required Pyhton extension does not always load quickly enough.
 - alt text for project intro image

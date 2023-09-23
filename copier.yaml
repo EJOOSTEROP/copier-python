@@ -24,8 +24,8 @@ _message_after_copy: |
 # PROMPT --------------------------------
 project_name:
     type: str
-    help: What is the name of your project? This is the Python distribution name of the package/project. All lower case and underscores. No space or hyphens.
-    default: example_project
+    help: What is the name of your project? This is the Python distribution name of the package/project (pip install 'project_name'). All lower case and underscores. No space or hyphens.
+    default: exampleproject
     validator: >-
         {% if not (project_name | regex_search('^[a-z][a-z0-9\_\-]+$')) %}
         Must use a lowercase letter followed by one or more of (a-z, 0-9, _, -).
@@ -62,17 +62,17 @@ author_linkedin_url:
 
 repository_namesepace:
     type: str
-    help: From github, the 'pandas-dev' in the URL https://github.com/pandas-dev/pandas
+    help: What is the GitHub repository namespace? The 'pandas-dev' in the URL https://github.com/pandas-dev/pandas
     default: EJOOSTEROP
 
 repository_package:
     type: str
-    help: From github, the 'pandas' in the URL https://github.com/pandas-dev/pandas
+    help: What is the GitHub repository package name? The 'pandas' in the URL https://github.com/pandas-dev/pandas
     default: "{{package_name}}"
 
 repository_url:
     type: str
-    help: What is the URL of code repository?
+    help: What is the GitHub URL of code repository?
     default: "https://github.com/{{repository_namesepace}}/{{package_name}}"
 
 customized_install:
@@ -86,7 +86,7 @@ customized_install:
 include_docker:
     type: bool
     help: Whether to include file(s) related to building a Docker image.
-    default: no
+    default: false
     choices:
         yes: true
         no: false
@@ -95,7 +95,7 @@ include_docker:
 setup_mypy:
     type: bool
     help: Whether to create py.typed file. Consider to manually update Ruff annotations check.
-    defaul: no
+    defaul: false
     choices:
         yes: true
         no: false
@@ -103,8 +103,8 @@ setup_mypy:
 
 annotations_ignore_fully_untyped:
     type: bool
-    help: Checking for type annotations is on. If 'yes', only partial annotations will be highlighted (So functions without type annotation are OK).
-    default: "{% if setup_mypy %}no{% else %}yes{% endif %}"
+    help: Checking for type annotations is always on. If 'yes', only partial annotations will be highlighted (So functions without type annotation at all are OK).
+    default: "{% if setup_mypy %}false{% else %}true{% endif %}"
     choices:
         yes: true
         no: false
@@ -112,7 +112,7 @@ annotations_ignore_fully_untyped:
 
 package_version:
     type: str
-    help: Starting version of package
+    help: Starting version of package.
     default: 0.0.1
     when: "{{customized_install}}"
 
@@ -125,5 +125,5 @@ repository_branch:
 pypi_url:
     type: str
     help: URL of the repository on PyPi.
-    default: "https://pypi.org/project/{{package_name}}/"
+    default: "https://pypi.org/project/{{project_name}}/"
     when: "{{customized_install}}"

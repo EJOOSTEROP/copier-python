@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.7.2] 2023-09-23
+
 ### Changed
 - Remove underscore from default project_name.
 - Update default values (mostly from no to false) in detailed questions in copier.yaml.

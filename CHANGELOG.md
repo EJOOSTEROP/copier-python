@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.7.3] 2023-11-08
+
+### Added
+- Current release shield
+
 ## [v0.7.2] 2023-09-23
 
 ### Changed

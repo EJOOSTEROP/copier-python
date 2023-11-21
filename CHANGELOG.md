@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+### Changed
+- Shields formatting for better display.
+
 ## [v0.7.3] 2023-11-08
 
 ### Added

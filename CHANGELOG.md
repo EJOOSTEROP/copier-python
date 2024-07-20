@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## [Unreleased]
 
+## [v0.7.4] 2024-07-20
+
+### Added
+- Sample class and import statement.
+
 ### Changed
 - Shields formatting for better display.
 

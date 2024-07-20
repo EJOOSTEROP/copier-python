@@ -3,10 +3,13 @@
 {{project_description}}
 """
 
+from {{package_name}}.myclass import MyClass
+
 
 def main():
     """_summary_."""
-    print("Hello world from {{package_name}}.")  # noqa T201
+    x = MyClass()
+    print(x.start())  # noqa T201
 
     return -1
 
